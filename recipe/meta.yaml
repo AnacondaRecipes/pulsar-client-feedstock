@@ -50,5 +50,10 @@ about:
   summary: Apache Pulsar Python client library
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/70829
+    reason: Client request
+  recipe-maintainers:
+    - ianaobi
   recipe-maintainers:
     - xhochy
