@@ -15,13 +15,12 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - ninja
     - sed     # [not win]
     - m2-sed  # [win]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    #- cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - python                                 # [build_platform != target_platform]
   host:
     - python
@@ -50,5 +49,11 @@ about:
   summary: Apache Pulsar Python client library
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/70829
+    reason: Client request
+  recipe-maintainers:
+    - ianaobi
+    - bkreider
   recipe-maintainers:
     - xhochy
