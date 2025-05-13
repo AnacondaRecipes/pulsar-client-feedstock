@@ -54,5 +54,6 @@ extra:
     reason: Client request
   recipe-maintainers:
     - ianaobi
+    - bkreider
   recipe-maintainers:
     - xhochy
